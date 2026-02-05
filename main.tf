@@ -13,7 +13,7 @@ module "vm" {
   subnet_id      = "/subscriptions/cd022542-e5a6-43c1-a1af-208a100106a7/resourceGroups/test-privatenet/providers/Microsoft.Network/virtualNetworks/test-vnet/subnets/default"
 
   admin_username = "azureuser"
-  ssh_public_key = file("~/.ssh/id_rsa.pub")
+  ssh_public_key = file("${path.module}/keys/id_rsa.pub")
 
   tags = {}
 }
