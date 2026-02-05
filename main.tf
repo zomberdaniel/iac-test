@@ -14,6 +14,6 @@ module "vm" {
 
   admin_username = "azureuser"
   ssh_public_key = file("${path.module}/keys/id_rsa.pub")
-
+  storage_account_id = "/subscriptions/cd022542-e5a6-43c1-a1af-208a100106a7/resourceGroups/test-storage/providers/Microsoft.Storage/storageAccounts/teststorage187"
   tags = {}
 }

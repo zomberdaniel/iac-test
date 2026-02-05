@@ -3,6 +3,8 @@ variable "location" {}
 variable "rg_name" {}
 variable "subnet_id" {}
 
+variable "storage_account_id" {}
+
 variable "vm_size" {
   default = "Standard_B2s"
 }
