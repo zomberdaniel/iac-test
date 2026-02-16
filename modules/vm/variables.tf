@@ -6,7 +6,7 @@ variable "subnet_id" {}
 variable "storage_account_id" {}
 
 variable "vm_size" {
-  default = "Standard_B2s"
+  default = "Standard_D2s_v3"
 }
 
 variable "admin_username" {}
