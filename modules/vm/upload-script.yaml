@@ -11,10 +11,7 @@ runcmd:
   - curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 
 write_files:
-  - path: /home/azureuser/upload.sh
-    permissions: '0755'
-    owner: azureuser:azureuser
-    content: |
+  - content: |
       #!/bin/bash
       STORAGE_ACCOUNT="teststorage187"
       CONTAINER_NAME="uploads"
@@ -34,3 +31,5 @@ write_files:
         --auth-mode login
 
       echo "Nahravani dokonceno"
+    path: /home/azureuser/upload.sh
+    permissions: '0755'
